@@ -1,0 +1,143 @@
+.filters-component {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    max-width: 250px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.filters-component .options {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.filters-component .option-item {
+    display: flex;
+    /* border: 1px solid; */
+    width: calc(100%/2 - 10px);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.filters-component .option-item input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.filters-component .filters {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    row-gap: 10px;
+}
+
+.filters-component .filter-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.filters-component .filter-toggle-btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.filters-component .filter-toggle-section {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filters-component .filter-toggle-label.active {
+    font-weight: 700;
+}
+
+.filters-component .filter-toggle-label {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.filters-component .filters-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 1px solid grey;
+}
+
+.filters-component .filters-label-n-count {
+    display: flex;
+    column-gap: 10px;
+}
+
+.filters-component .filters-header-label {
+    display: flex;
+
+}
+
+.filters-component .filters-close {
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.filters-component .filters-footer {
+    padding: 20px 20px;
+}
+
+.filters-component .apply-btn {
+    display: flex;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    min-height: 30px;
+    align-items: center;
+}
+
+.filters-component .filters-component {
+    display: flex;
+    padding: 20px 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.filters-component .filters-main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.close {
+    display: none;
+}
+
+.sidebar-close-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+

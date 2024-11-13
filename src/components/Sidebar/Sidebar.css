@@ -1,0 +1,26 @@
+.sidebar {
+    z-index: 999;
+}
+
+.sidebar-close-btn {
+
+}
+
+.three-dot-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-btn-count {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    z-index: 999;
+}

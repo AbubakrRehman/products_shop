@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+.multi-select.dropdown {
+    display: flex;
+}
+
+.dropdown-main {
+    position: relative;
+}
+
+.multi-select.dropdown .dropdown-btn {
+    background-color: transparent;
+    margin: 0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 15px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.multi-select.dropdown .dropdown-btn.active {
+    font-weight: 700;
+}
+
+.multi-select.dropdown .dropdown-board {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 5px solid;
+    row-gap: 10px;
+    z-index: 999;
+}
+
+.multi-select.dropdown .dropdown-board .cross-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.multi-select.dropdown .dropdown-board .dropdown-label {
+    text-transform: capitalize;
+}
+
+.multi-select.dropdown .dropdown-board .options {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.multi-select.dropdown .dropdown-board .options .option {
+    display: flex;
+    width: calc((100%/2) - 10px);
+    cursor: pointer;
+}
+
+.multi-select.dropdown .dropdown-board .options .option label {
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.multi-select.dropdown .dropdown-board .cross-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.active-filters-dropdown {
+    border: 1px solid black !important;
+    background-color: rgb(243 241 241) !important;
+}

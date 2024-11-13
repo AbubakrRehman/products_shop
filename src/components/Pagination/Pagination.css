@@ -1,0 +1,19 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.next-btn {
+    display: flex;
+    border: none ;
+    align-items: center;
+    background-color: transparent ;
+    cursor: pointer;
+    column-gap: 10px;
+}
+
+.next-btn-text {
+    text-transform: uppercase;
+    font-weight: 700;
+}
